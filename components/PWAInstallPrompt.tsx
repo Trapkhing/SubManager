@@ -31,12 +31,6 @@ export function PWAInstallPrompt() {
                 setIsVisible(true);
             }
         }
-
-        // Debug mode: ?pwa_debug=true forces the prompt to show
-        const urlParams = new URLSearchParams(window.location.search);
-        if (urlParams.get('pwa_debug') === 'true') {
-            setIsVisible(true);
-        }
     }, []);
 
     useEffect(() => {
